@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foque</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="quantity-container">
+    <p class="controls-header">Zoom</p>
+    <div class="controls">
+      <button class="control-button" onclick="decreaseQuantity();">-</button>
+      <div id="quantity-level" class="indicator"></div>
+      <button class="control-button" onclick="increaseQuantity();">+</button>
+    </div>
+  </div>
+  <div class="blur-container">
+    <p class="controls-header">Desfocar</p>
+    <div class="controls">
+      <button class="control-button" onclick="decreaseDepth();">-</button>
+      <div id="blur-level" class="indicator"></div>
+      <button class="control-button" onclick="increaseDepth();">+</button>
+    </div>
+  </div>
+  <div id="dof-container" class="container">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/ace.png" class="card-common" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/two.png" class="card-common" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/three.png" class="card-common" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/four.png" class="card-common" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/five.png" class="card-common" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/six.png" class="card-common" />
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  background: hsl(213, 8%, 40%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  transition: all .5s ease;
+  perspective: 200px;
+  height: 100vh;
+}
+
+.card-common {
+  align-self: center;
+  cursor: pointer;
+  box-shadow: -10px 0 30px -10px hsla(0, 0%, 0%, 0.45);
+  transition: all .15s linear;
+  transform: rotateY(5deg);
+}
+
+/* clicked elements in dof-container dodge left to fully reveal themselves */
+.reveal:active {
+  padding-right: 6em;
+  transform: rotateZ(0deg);
+  box-shadow: none;
+}
+
+/* Blur Controls */
+
+.blur-container{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.66);
+  z-index: 2;
+}
+
+.controls-header {
+  color: white;
+  font-size: 15px;
+  background: hsl(2, 49%, 56%);
+  padding: 5px;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.control-button {
+  width: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  background: hsl(216, 14%, 24%);
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.blur-button:hover {
+  background: hsl(216, 14%, 44%);
+}
+
+.indicator {
+  background: hsl(219, 15%, 15%);
+  width: 80px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Card controller */
+
+.quantity-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.66);
+  z-index: 2;
+}
